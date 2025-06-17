@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 15);
+}
+
+.todo{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.todo__value{
+    background:black;
+    border: none;
+    outline: none;
+    font-family: 'quicksand', sans-serif;
+    font-size: 1em;
+    flex-grow: 1;
+}
+
+.todo:has(.todo__checkbox:checked){
+    color: #555;
+    background: #eee;
+    text-decoration: line-through;
+    order: 1;
+}
+
+body{
+    background-image: url("bg.jpeg");
+    text-align: center;
+}
